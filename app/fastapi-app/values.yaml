@@ -1,0 +1,8 @@
+replicaCount: 1
+image: 
+  repository: fastapi-app
+  tag: "1.0.0"
+service: 
+  type: LoadBalancer
+  port: 80
+  targetPort: 8000 

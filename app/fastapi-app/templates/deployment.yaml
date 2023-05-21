@@ -13,8 +13,8 @@ spec:
         app: fastapi-app
     spec:
       containers:
-      - name: fastapi-app
-        image: app:latest
+      - name: .Values.app.name
+        image: fastapi-app:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8000
