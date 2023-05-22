@@ -1,0 +1,15 @@
+releases:
+  - name: app
+    chart: ./app/helm
+    namespace: my-namespace
+
+  - name: rabbitmq
+    chart: oci://registry-1.docker.io/bitnamicharts/rabbitmq
+    namespace: my-namespace
+    version: "*"
+#
+#  - name: chart3
+#    chart: ./path/to/chart3
+#    namespace: my-namespace
+#    values:
+#      - values.yaml
