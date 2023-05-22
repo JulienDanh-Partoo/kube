@@ -1,10 +1,10 @@
 releases:
   - name: app
-    chart: ./app/helm
+    chart: ./kubernetes/app
     namespace: my-namespace
 
   - name: rabbitmq
-    chart: oci://registry-1.docker.io/bitnamicharts/rabbitmq
+    chart: ./kubernetes/rabbitmq
     namespace: my-namespace
     version: "*"
 #
